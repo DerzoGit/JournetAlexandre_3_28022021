@@ -1,0 +1,18 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.menu__title--typo {
+    font-family: Shrikhand, sans-serif;
+}
+
+.menu__section-title--typo {
+    text-transform: uppercase;
+    font-weight: 300;
+    color: green;
+}
+
+.menu__section-title {
+    border: 5px solid $cd-tertiary;
+}

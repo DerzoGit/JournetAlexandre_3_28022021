@@ -1,2 +1,5 @@
-@import "./normalize";
-@import "./variable";
+@import "./Base/normalize";
+@import "./Base/base";
+@import "./Base/typography";
+@import "./Utils/variable";
+@import "./Layouts/header";
