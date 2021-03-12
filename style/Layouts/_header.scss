@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 5rem;
+    margin-bottom: .1rem;
+    &__logo {
+        max-width: 10.5rem;
+    }
+}
+
+
+
+.description {
+    text-align: center;
+    background-color: $cd-background;
+    padding: 2.5rem 1rem 3rem 1rem;
+}
