@@ -1,0 +1,17 @@
+.description {
+    text-align: center;
+    background-color: $cd-background;
+    padding: 1.5rem 1rem 3rem 1rem;
+    &__title {
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin: 1rem 2rem;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    &__bouton {
+        background:linear-gradient(170deg,#ff79da 0%, #9356dc 80%);
+    }
+}
