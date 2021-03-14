@@ -12,6 +12,9 @@
         font-size: 1rem;
     }
     &__bouton {
-        background:linear-gradient(170deg,#ff79da 0%, #9356dc 80%);
+        border: none;
+        &-text {
+            color: white;
+        }
     }
 }
