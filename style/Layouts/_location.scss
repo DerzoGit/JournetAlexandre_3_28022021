@@ -12,6 +12,10 @@
             border: none;
             font-weight: 700;
             padding-left: 1rem;
+            &::placeholder {
+                color: $cd-placeholder;
+                opacity: 1; /*firefox adds lower opacity by default*/
+            }
             &:focus {
                 outline: none;
         }
