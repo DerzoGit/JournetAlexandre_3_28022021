@@ -1,0 +1,14 @@
+button {
+    background: linear-gradient(170deg,#ff79da 0%, #9356dc 90%);
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.30);
+    color: white;
+    scale: 1;
+    transition: transform 0.5s;
+    &:hover {
+        cursor: pointer;
+        transform: scale(0.95);
+    }
+}
