@@ -1,1 +1,11 @@
-@import "./normalize.scss"
+@import "./Base/normalize";
+@import "./Utils/variable";
+@import "./Base/base";
+@import "./Base/typography";
+@import "./Layouts/header";
+@import "./Layouts/location";
+@import "./Layouts/description";
+@import "./Layouts/fonctionnement";
+@import "./Layouts/restaurants";
+@import "./Components/card";
+@import "./Components/bouton";
