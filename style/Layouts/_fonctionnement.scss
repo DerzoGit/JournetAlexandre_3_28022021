@@ -1,6 +1,7 @@
 .fonctionnement {
+    padding: 2rem 0 3rem;
     &__title {
-        padding: 2rem 1.5rem 0rem 1.5rem;
+        padding: 0rem 1.5rem 0rem 1.5rem;
         font-size: 1.5rem;
     }
     &__org-list {
@@ -10,12 +11,12 @@
         list-style-type: none;
         counter-increment: step;
         padding: 1.5rem;
-        margin: 1.5rem 0rem;
+        margin: 1.5rem 0;
         background-color: $cd-background;
         max-width: 20rem;
         border-radius: 1.5rem;
         display: flex;
-        justify-content: center;
+        align-items: center;
         position: relative;
         box-shadow: 0px 3px 7px 2px rgba(0,0,0,0.20);
         transition: all 0.5s;

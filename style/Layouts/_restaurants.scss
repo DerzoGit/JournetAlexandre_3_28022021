@@ -1,7 +1,8 @@
 .restaurants {
     background-color: $cd-background;
+    padding: 2rem 0rem 3rem;
     &__title {
-        padding: 2rem 1.5rem 0rem 1.5rem;
+        padding: 0rem 1.5rem;
         font-size: 1.5rem;
     }
 }
