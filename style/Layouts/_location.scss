@@ -13,7 +13,7 @@
             font-weight: 700;
             padding-left: 1rem;
             &::placeholder {
-                color: $cd-placeholder;
+                color: $cd-background-dark;
                 opacity: 1; /*firefox adds lower opacity by default*/
             }
             &:focus {
