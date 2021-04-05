@@ -1,6 +1,6 @@
 .illustration {
-    max-height: 15rem;
     max-width: 100%;
+    max-height: 30rem;
     object-fit: cover;
     width: 100%;
 }
@@ -17,6 +17,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include tablet {
+            justify-content: space-evenly
+        }
+        @include desktop {
+            justify-content: space-evenly;
+        }
         &--typo {
             font-family: Shrikhand, sans-serif;
             font-size: 1.8rem;
@@ -24,6 +30,18 @@
         &-fav {
             scale: 1.5;
             margin-right: 1rem;
+        }
+    }
+    &__div {
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        @include desktop {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
         }
     }
     &__section {
@@ -47,6 +65,9 @@
             max-width: 22rem;
             display: flex;
             cursor: pointer;
+            @include desktop {
+                min-width: 25rem;
+            }
             &--text {
                 flex: 1 0;
                 white-space: nowrap;

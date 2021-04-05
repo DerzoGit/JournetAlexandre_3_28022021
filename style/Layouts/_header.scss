@@ -11,6 +11,15 @@
         scale: 1.5;
         color: $cd-background-dark;
         margin-left: -5rem;
+        @include mobile-small {
+            margin-left: -3rem;
+        }
+        @include tablet {
+            display: none;
+        }
+        @include desktop {
+            display: none;
+        }
     }
 }
 
