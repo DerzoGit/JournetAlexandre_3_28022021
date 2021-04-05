@@ -2,6 +2,12 @@
     background-color: $cd-background-dark;
     color: white;
     padding: 0.5rem 1.5rem;
+    @include tablet {
+        text-align: center;
+    }
+    @include desktop {
+        text-align: center;
+    }
     &__logo {
         font-family: Shrikhand, sans-serif;
         font-size: 1rem;

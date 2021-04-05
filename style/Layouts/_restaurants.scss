@@ -1,8 +1,24 @@
 .restaurants {
     background-color: $cd-background;
     padding: 2rem 0rem 3rem;
+    @include tablet {
+        text-align: center;
+    }
+    @include desktop {
+        text-align: center;
+    }
     &__title {
         padding: 0rem 1.5rem;
         font-size: 1.5rem;
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include desktop {
+            display: grid;
+            grid-template-areas: "auto auto";
+            justify-content: space-evenly;
+        }
     }
 }
