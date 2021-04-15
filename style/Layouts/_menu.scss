@@ -65,6 +65,7 @@
             max-width: 22rem;
             display: flex;
             cursor: pointer;
+            overflow: hidden;
             @include desktop {
                 min-width: 25rem;
             }
@@ -96,8 +97,28 @@
                 font-weight: 700;
                 padding-left: 1.3rem;
             }
-            &--check {
-                display: none;
+            &-confirmation {
+                background-color: $cd-tertiary;
+                width: 4rem;
+                margin: -1rem -5rem -1rem 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.5s;
+                &--check {
+                    color: $cd-tertiary;
+                    background-color: white;
+                    border-radius: 50%;
+                    padding: .3rem;
+                    rotate: -270deg;
+                    transition: all 0.5s;
+                }
+            }
+            &:hover &-confirmation {
+                    margin: -1rem -1rem -1rem 1rem;
+                    &--check {
+                        rotate: 0deg;
+                    }
             }
         }
     }
