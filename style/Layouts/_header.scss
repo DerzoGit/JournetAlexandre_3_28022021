@@ -15,10 +15,10 @@
             margin-left: -3rem;
         }
         @include tablet {
-            display: none;
+            margin-left: -15rem;
         }
         @include desktop {
-            display: none;
+            margin-left: -25rem;
         }
     }
 }
