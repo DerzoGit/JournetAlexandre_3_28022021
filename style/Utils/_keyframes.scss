@@ -1,0 +1,46 @@
+@keyframes menuDisplay {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes loader {
+    100% {
+        opacity: 0;
+        z-index: -1000;
+    }
+}
+
+
+@keyframes loader-ball1 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes loader-ball2 {
+    0% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        transform: translatex(1rem);
+    }
+}
+@keyframes loader-ball3 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
