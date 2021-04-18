@@ -18,7 +18,7 @@
         align-items: center;
         justify-content: space-between;
         @include tablet {
-            justify-content: space-evenly
+            justify-content: space-evenly;
         }
         @include desktop {
             justify-content: space-evenly;
@@ -30,6 +30,27 @@
         &-fav {
             font-size: 1.5rem;
             margin-right: 1rem;
+            &--blank {
+                transition: visibility 0s, opacity 0.3s linear;
+                position: absolute;
+            }
+            &--color {
+                background: linear-gradient(170deg,#ff79da 0%, #9356dc 90%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s, opacity 0.3s linear;
+            }
+            &:hover &--color {
+                visibility: visible;
+                opacity: 1;
+            }
+            &:hover &--blank {
+                visibility: hidden;
+                opacity: 0;
+            }
         }
     }
     &__div {
@@ -66,6 +87,12 @@
             display: flex;
             cursor: pointer;
             overflow: hidden;
+            animation: menuDisplay 1s both;
+            @for $i from 0 to 10 {
+                &--delay-#{$i} {
+                    animation-delay: #{$i/10}s;
+                }
+            }
             @include desktop {
                 min-width: 25rem;
             }

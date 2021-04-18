@@ -52,8 +52,29 @@
             margin-top: 0rem;
         }
         &-fav-logo {
-                font-size: 1.5rem;
                 margin-right: 1.5rem;
+                font-size: 1.5rem;
+                &--blank {
+                    transition: visibility 0s, opacity 0.3s linear;
+                    position: absolute;
+                }
+                &--color {
+                    background: linear-gradient(170deg,#ff79da 0%, #9356dc 90%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: visibility 0s, opacity 0.3s linear;
+                }
+                &:hover &--color {
+                    visibility: visible;
+                    opacity: 1;
+                }
+                &:hover &--blank {
+                    visibility: hidden;
+                    opacity: 0;
+                }
             }
         }
     }
