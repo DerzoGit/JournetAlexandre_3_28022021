@@ -137,14 +137,14 @@
                     background-color: white;
                     border-radius: 50%;
                     padding: .3rem;
-                    rotate: -270deg;
+                    transform:rotate(-270deg);
                     transition: all 0.5s;
                 }
             }
             &:hover &-confirmation {
                     margin: -1rem -1rem -1rem 1rem;
                     &--check {
-                        rotate: 0deg;
+                        transform:rotate(0deg);
                     }
             }
         }
